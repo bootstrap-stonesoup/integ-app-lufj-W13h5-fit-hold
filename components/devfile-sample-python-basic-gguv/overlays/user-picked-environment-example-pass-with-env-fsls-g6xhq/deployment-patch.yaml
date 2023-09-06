@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-gguv
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: var_name
+          value: test
+        image: quay.io/bootstrap/integration-e2e-tenant/integ-app-lufj/devfile-sample-python-basic-gguv@sha256:ed4e5424b4f83718c3da8862b3e61a40b9df43363336467b1a6216c18a924c23
+        name: my-python
+        resources: {}
+status: {}
